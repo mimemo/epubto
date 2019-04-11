@@ -269,3 +269,4 @@ __pycache__/
 /dll/DynamicJson.dll
 /kindlegen_win32_v2_9*
 *.zip
+/epubto_Installer/epubtoSetup/v*

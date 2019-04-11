@@ -52,13 +52,13 @@ namespace epubto.Views
             string tx = string.Empty;
             if (isJp)
             {
-                tx += "\r\n ## 2019/04/12 versino 1.0";
+                tx += "\r\n ## 2019/04/12 versino 1.0.3";
                 tx += "\r\n  初期版";
                 tx += "\r\n";
             }
             else
             {
-                tx += "\r\n ## 2019/04/12 versino 1.0";
+                tx += "\r\n ## 2019/04/12 versino 1.0.3";
                 tx += "\r\n  Initial release";
                 tx += "\r\n";
             }
