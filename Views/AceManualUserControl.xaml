@@ -1,0 +1,34 @@
+﻿<UserControl
+    x:Class="epubto.Views.AceManualUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:epubto.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:epubto.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin="10" FontSize="18">
+            Testing has only been done with Ace 1.0.2 + nmp6.9.0 + Nodejs 10.15.3 + Windows 10 (x64).<LineBreak />
+            <LineBreak />
+            Preparation:<LineBreak />
+            To use this function, the Ace command must be executable.<LineBreak />
+            See also :<common:HyperlinkEx NavigateUri="https://daisy.github.io/ace/getting-started/installation/">
+                Ace, by DAISY : Installation
+            </common:HyperlinkEx><LineBreak /><LineBreak />
+            Usage:</TextBlock>
+
+        <Image
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+            Source="/epubto;component/Assets/ace1.png"
+            Stretch="Uniform" />
+
+    </Grid>
+
+</UserControl>

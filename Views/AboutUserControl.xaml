@@ -1,0 +1,98 @@
+﻿<UserControl
+    x:Class="epubto.Views.AboutUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:epubto.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:materialDesignConverters="clr-namespace:MaterialDesignThemes.Wpf.Converters;assembly=MaterialDesignThemes.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Margin="5"
+    mc:Ignorable="d">
+    <DockPanel>
+        <DockPanel.Resources>
+
+            <Style BasedOn="{StaticResource MaterialDesignTextBox}" TargetType="TextBox">
+                <Setter Property="IsReadOnly" Value="True" />
+                <Setter Property="AcceptsReturn" Value="True" />
+                <Setter Property="Margin" Value="10" />
+            </Style>
+
+        </DockPanel.Resources>
+
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Info" />
+            <TextBlock Name="Appinfo" Margin="10,1" />
+
+            <Image
+                Width="128"
+                Margin="10,1"
+                HorizontalAlignment="Left"
+                Source="../Assets/base256.png" />
+
+            <Border
+                Height="1"
+                Margin="5"
+                Background="Gray" />
+
+            <StackPanel>
+                <TextBlock Text="Dependency" />
+
+                <TextBlock Margin="10,1">
+                    <Hyperlink
+                        Name="hyperlink3"
+                        NavigateUri="https://github.com/runceel/ReactiveProperty/blob/master/LICENSE.txt"
+                        RequestNavigate="HyperlinkRequestNavigate"
+                        ToolTip="{Binding ElementName=hyperlink3, Path=NavigateUri}">
+                        <TextBlock Text="ReactiveProperty" />
+                    </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Margin="10,1">
+                    <Hyperlink
+                        Name="hyperlink2"
+                        NavigateUri="https://www.nuget.org/packages/DynamicJson"
+                        RequestNavigate="HyperlinkRequestNavigate"
+                        ToolTip="{Binding ElementName=hyperlink2, Path=NavigateUri}">
+                        <TextBlock Text="DynamicJson" />
+                    </Hyperlink>
+                </TextBlock>
+
+
+
+
+                <TextBlock Margin="10,1">
+                    <Hyperlink
+                        Name="hyperlink4"
+                        NavigateUri="https://github.com/ButchersBoy/MaterialDesignInXamlToolkit/blob/master/LICENSE"
+                        RequestNavigate="HyperlinkRequestNavigate"
+                        ToolTip="{Binding ElementName=hyperlink4, Path=NavigateUri}">
+                        <TextBlock Text="MaterialDesignInXamlToolkit" />
+                    </Hyperlink>
+                </TextBlock>
+
+            </StackPanel>
+
+            <Border
+                Height="1"
+                Margin="5"
+                Background="Gray" />
+
+            <TextBlock Margin="0,10,0,0" Text="History" />
+
+            <TextBox
+                Name="historyinfo"
+                Margin="10,0"
+                VerticalAlignment="Stretch"
+                materialDesign:HintAssist.Hint="Historyt"
+                AcceptsReturn="True"
+                TextWrapping="Wrap"
+                VerticalScrollBarVisibility="Auto" />
+
+        </StackPanel>
+
+
+
+
+    </DockPanel>
+</UserControl>

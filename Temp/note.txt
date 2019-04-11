@@ -1,0 +1,2 @@
+﻿// The files in this folder are temporary. It is OK to delete it.
+// Please leave the folder.
