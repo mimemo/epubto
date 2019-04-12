@@ -31,9 +31,6 @@ namespace epubto
             this.InitializeComponent();
             this.DataContext = this.Vm;
 
-            // static 呼び出し用
-            var a = AceUtil.NodeVersion;
-            Debug.WriteLine(a);
 
             // タイトル
             this.Title = VersionTxt.MakeTextNmaeAndVersion();
